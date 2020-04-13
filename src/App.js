@@ -16,10 +16,12 @@ export const EXCHANGE_RATES = gql`
 function App() {
   const { loading, error, data } = useQuery(EXCHANGE_RATES)
 
+  // console.log(loading)
+  // console.log(error)
+  // console.log(data)
+
   // if (loading) return <p>Loading...</p>;
   // if (error) return <p>Error :(</p>;
-
-  // console.log(data)
 
   return (
     <div className="App">
